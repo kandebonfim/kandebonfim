@@ -34,7 +34,7 @@ title: Hello, Fuckers!
   .container
     .hero.hero--inline.copyright
       | running in
-      = link_to ' middleman', 'https://middlemanapp.com/', target: '_new', class: 'copyright__link'
+      = link_to ' middleman', data.social.middleman, target: '_new', class: 'copyright__link'
       | . designed and coded by
-      = link_to ' @kandebonfim', 'https://twitter.com/kandebonfim', target: '_new', class: 'copyright__link'
+      = link_to ' '+data.social.twitter.username, data.social.twitter.link, target: '_new', class: 'copyright__link'
       | .

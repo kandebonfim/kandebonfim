@@ -1,7 +1,13 @@
+twitter:
+  username: "@kandebonfim"
+  my_twitter: &my_twitter_link "https://twitter.com/kandebonfim"
+
+middleman: "https://middlemanapp.com/"
+
 items:
   - title: "Twitter"
     icon: "twitter"
-    link: "https://twitter.com/kandebonfim"
+    link: *my_twitter_link
   - title: "GitHub"
     icon: "github"
     link: "https://github.com/kandebonfim"
