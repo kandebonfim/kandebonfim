@@ -1,0 +1,49 @@
+@charset "utf-8"
+
+// ========================================
+//   application.css.sass
+// ========================================
+
+
+// [0] Requirements --- Vendor libraries
+// [1] Settings ------- Sass vars, etc.
+// [2] Tools ---------- Functions and mixins.
+// [3] Generic -------- Generic, high-level styling, like resets, etc.
+// [4] Base ----------- Unclasses HTML elements (e.g. `h2`, `ul`).
+// [5] Objects -------- Objects and abstractions.
+// [6] Components ----- Your designed UI elements (inuitcss includes none of these).
+// [7] Trumps --------- Overrides and helper classes.
+
+// ↓ ITCSS_CLI FILE IMPORTING ↓
+
+// [0] Settings
+@import "settings/_settings.colors.sass"
+@import "settings/_settings.fonts.sass"
+
+
+// [2] Generic
+@import "generic/_generic.resets.sass"
+
+
+// [3] Base
+@import "base/_base.type.sass"
+
+
+// [4] Objects
+@import "objects/_objects.containers.sass"
+
+
+// [5] Components
+@import "components/_components.buttons.sass"
+@import "components/_components.copyright.sass"
+@import "components/_components.hero.sass"
+@import "components/_components.profile-photo.sass"
+@import "components/_components.sections.sass"
+@import "components/_components.social-links.sass"
+
+
+// [6] Trumps
+@import "trumps/_trumps.helpers.sass"
+
+
+// ↑ ITCSS_CLI FILE IMPORTING ↑

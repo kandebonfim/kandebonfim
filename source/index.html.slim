@@ -1,0 +1,40 @@
+---
+title: Hello, Fuckers!
+---
+
+.section.section--green
+  .container
+    .profile-photo
+    .hero
+      .hero__title Hello, Folks!
+      .hero__subtitle My name is Kande Bonfim.
+
+.section
+  .container
+    .hero.hero--inline.text-align-center
+      .hero__paragraph I'm a developer born in Brazil and hanging on the line<br>between logic and creativity since I was a little kid.
+      .hero__paragraph This site has not been done to find me a job, but to<br>introduce myself and to really shows what I do.
+      .hero__tip
+        span That's why I'm being so informal.
+        |  😎
+      = link_to 'read my story', '', class: 'btn'
+
+.section.section--darker
+  .container
+    .social-links.text-align-center
+      .social-links__title
+        | I’m
+        = link_to ' @kandebonfim', 'https://twitter.com/kandebonfim', target: '_new'
+        |  everywhere.
+      .social-links__list
+        - data.social.items.each do |link|
+          = link_to '', link.link, target: '_new', class: "fa fa-lg fa-#{link.icon} social-links__link", title: link.title
+
+.section
+  .container
+    .hero.hero--inline.copyright
+      | running in
+      = link_to ' middleman', 'https://middlemanapp.com/', target: '_new', class: 'copyright__link'
+      | . designed and coded by
+      = link_to ' @kandebonfim', 'https://twitter.com/kandebonfim', target: '_new', class: 'copyright__link'
+      | .
