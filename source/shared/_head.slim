@@ -1,5 +1,5 @@
 meta charset='utf-8'
-title Middleman Startaê
+title = current_page.data.title || "Middleman"
 = stylesheet_link_tag 'application.css', media: 'all'
 link rel='dns-prefetch' href='//cdnjs.cloudflare.com'
 link rel='dns-prefetch' href='//www.google-analytics.com'
@@ -14,6 +14,8 @@ meta content='320' name='MobileOptimized'
 / This is the Development version. Remember to use
 / the build tool below to pick only the tests you need.
 / -------------------------------------
+= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Open+Sans:300,700,800'
+= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
 = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js'
 /[if lt IE 9]
   = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js'
