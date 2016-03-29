@@ -4,7 +4,7 @@
 
 # Site Settings
 # ----------------------------------------------
-@google_analytics = "UA-XXXXXXX-X"
+@google_analytics = "UA-72298904-2"
 
 
 # Slim HTML
