@@ -3,7 +3,7 @@ middleman: "https://middlemanapp.com/"
 
 twitter:
   username: "@kandebonfim"
-  my_twitter: &my_twitter_link "https://twitter.com/kandebonfim"
+  link: &my_twitter_link "https://twitter.com/kandebonfim"
 
 social:
   - title: "Twitter"

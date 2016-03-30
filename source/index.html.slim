@@ -26,7 +26,7 @@ title: Hello, Folks!
     .social-links.text-align-center
       .social-links__title
         | I’m
-        = link_to ' @kandebonfim', 'https://twitter.com/kandebonfim', target: '_new'
+        = link_to ' '+data.links.twitter.username, data.links.twitter.link, target: '_new'
         |  everywhere.
       .social-links__list
         - data.links.social.each do |link|
