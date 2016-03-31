@@ -16,24 +16,30 @@
 
 // ↓ ITCSS_CLI FILE IMPORTING ↓
 
-// [0] Settings
+// [1] Settings
+@import "inuit-defaults/settings.defaults"
 @import "settings/_settings.colors.sass"
 @import "settings/_settings.fonts.sass"
 
 
-// [2] Generic
+// [2] Tools
+@import "inuit-functions/tools.functions"
+
+
+// [3] Generic
 @import "generic/_generic.resets.sass"
 
 
-// [3] Base
+// [4] Base
+@import "inuit-page/base.page"
 @import "base/_base.type.sass"
 
 
-// [4] Objects
+// [5] Objects
 @import "objects/_objects.containers.sass"
 
 
-// [5] Components
+// [6] Components
 @import "components/_components.buttons.sass"
 @import "components/_components.copyright.sass"
 @import "components/_components.hero.sass"
@@ -42,7 +48,7 @@
 @import "components/_components.social-links.sass"
 
 
-// [6] Trumps
+// [7] Trumps
 @import "trumps/_trumps.helpers.sass"
 
 
