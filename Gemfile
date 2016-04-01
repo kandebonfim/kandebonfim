@@ -31,4 +31,4 @@ gem 'coffee-script', '2.4.1'
 # Generate fake data
 gem 'faker', '1.6.1'
 
-gem 'itcss_cli', '0.1.15'
+gem 'itcss_cli', '0.1.17'
