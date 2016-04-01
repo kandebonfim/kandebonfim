@@ -1,17 +1,8 @@
 # ========================================
 #   #itcss.yml
 # ========================================
-
-# Root folder where the ITCSS file structure should be builded.
+---
 stylesheets_directory: source/assets/stylesheets
-
-# Base sass file (all ITCSS modules will be imported in it).
 stylesheets_import_file: application.css
-
-# Uncomment to enable inuit modules importing. [ bower or npm ]
 package_manager: bower
 
-inuit_modules:
-  - tools.functions
-  - settings.defaults
-  - base.page
