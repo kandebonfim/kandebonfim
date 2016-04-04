@@ -20,25 +20,5 @@ title: Hello, Folks!
         .hero__tip
           span ok, I had a past affair with WordPress too.
           |  😐
-      .hero__paragraph But that is not everything, I became involved with many other things until<br>they fit as fit today. But that is a story for another URL:
+      .hero__paragraph But that is not everything, I became involved with many other things until<br>they fit as fit today. But that is a story for another URL.
       = link_to 'read my story', '', class: 'btn'
-
-.section.section--darker
-  .container
-    .social-links.text-align-center
-      .social-links__title
-        | I’m
-        = link_to ' '+data.links.twitter.username, data.links.twitter.link, target: '_new'
-        |  everywhere.
-      .social-links__list
-        - data.links.social.each do |link|
-          = link_to '', link.link, target: '_new', class: "fa fa-lg fa-#{link.icon} social-links__link", title: link.title
-
-.section
-  .container
-    .hero.hero--inline.copyright
-      | running in
-      = link_to ' middleman', data.links.middleman, target: '_new', class: 'copyright__link'
-      | . designed and coded by
-      = link_to ' '+data.links.twitter.username, data.links.twitter.link, target: '_new', class: 'copyright__link'
-      | .
