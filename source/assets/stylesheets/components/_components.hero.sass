@@ -19,10 +19,25 @@
   margin-top: 10px
 
 .hero__paragraph
+  color: rgba(white, .5)
   font-size: 20px
   text-align: center
   line-height: 1.2
   margin-bottom: 20px
+
+  a
+    position: relative
+
+    &:hover
+      color: $color-green
+
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 2px
+      bottom: 0px
+      background-color: rgba($color-green, .7)
 
 .hero__tip
   font-size: 13px
