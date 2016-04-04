@@ -1,6 +1,8 @@
 repository: "https://github.com/kandebonfim/kandebonfim"
 middleman: "https://middlemanapp.com/"
 
+startae: "http://www.startae.com/"
+
 twitter:
   username: "@kandebonfim"
   link: &my_twitter_link "https://twitter.com/kandebonfim"
