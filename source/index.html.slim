@@ -21,4 +21,30 @@ title: Hello, Folks!
           span ok, I had a past affair with PHP and WordPress too.
           |  😐
       .hero__paragraph That is not everything, I became involved with many other things until<br>they fit as fit today. But that is a story for another URL.
-      = link_to 'read my story', '', class: 'btn'
+      = link_to 'read my story', 'my-story', class: 'btn'
+
+.section
+  .container
+    .tab
+      .tab__header
+        .tab__handler Latest Articles
+      .tab__content
+        - data.articles.each do |article|
+          .article
+            .article__info
+              .article__title = article.title
+              .article__excerpt = article.excerpt
+            .article__link
+              = link_to 'read more', article.link, class: 'btn'
+
+    .tab
+      .tab__header
+        .tab__handler Open Source Projects
+      .tab__content
+        - data.open_source_projects.each do |project|
+          .article
+            .article__info
+              .article__title = project.title
+              .article__excerpt = project.excerpt
+            .article__link
+              = link_to 'view project', project.link, class: 'btn'

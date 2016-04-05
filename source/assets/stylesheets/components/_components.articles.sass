@@ -1,0 +1,41 @@
+// ========================================
+//   #components.articles
+// ========================================
+
+.article
+  display: flex
+  justify-content: space-between
+  margin: 26px 0
+  color: rgba(white, .8)
+
+  & + &
+    margin-top: 70px
+
+    &:after
+      content: ''
+      position: absolute
+      width: 6px
+      height: 6px
+      left: 50%
+      margin-top: -40px
+      background-color: rgba(white, .1)
+      border-radius: 50%
+      box-shadow: 14px 0 0 rgba(white, .1), -14px 0 0 rgba(white, .1)
+
+.article__info
+
+.article__title
+  font-weight: bolder
+  font-size: 20px
+
+.article__excerpt
+  font-size: 14px
+  margin-top: 12px
+  line-height: 1.6
+
+.article__link
+  flex-shrink: 0
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  margin-left: 30px
