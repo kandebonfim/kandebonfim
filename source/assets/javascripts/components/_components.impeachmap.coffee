@@ -2,6 +2,7 @@ class Impeachmap
   constructor: ->
     @votes = impeachmapData
     @votesContainer = document.querySelectorAll(".js-impeachmap-votes")[0]
+    @printAllData()
     waitForIt 300, => @bindClickEvents()
 
   addActiveStateClass: (state) ->
@@ -12,16 +13,21 @@ class Impeachmap
     document.querySelectorAll(".impeachmap__state[state='#{state}']")[0].setAttribute('is-active', true)
 
   printStateData: (state) ->
-    @printStateInfo(state)
+    @printStateInfo state.getAttribute('state-full'), state.getAttribute('region')
     votes = @findVotesByState state.getAttribute('state')
     @printRelativeVotes @findVoteMetrics votes, 'relative'
     @printAbsoluteVotes @findVoteMetrics votes
     @addActiveStateClass state.getAttribute('state')
 
-  printStateInfo: (data) ->
+  printAllData: ->
+    @printStateInfo 'Votação Geral', 'Todos os estados'
+    @printRelativeVotes @findVoteMetrics @votes, 'relative'
+    @printAbsoluteVotes @findVoteMetrics @votes
+
+  printStateInfo: (state, region) ->
     @votesContainer.innerHTML = ''
-    document.querySelectorAll('.js-impeachmap-state-name')[0].innerHTML = data.getAttribute('state-full')
-    document.querySelectorAll('.js-impeachmap-region')[0].innerHTML = data.getAttribute('region')
+    document.querySelectorAll('.js-impeachmap-state-name')[0].innerHTML = state
+    document.querySelectorAll('.js-impeachmap-region')[0].innerHTML = region
 
   printRelativeVotes: (data) ->
     bars = document.querySelectorAll('.js-impeachmap-bars')
