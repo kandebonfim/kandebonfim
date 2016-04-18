@@ -49,7 +49,7 @@ class @Impeachmap
       pos: 0
 
     for vote in data
-      switch @readVote vote.Posicao
+      switch @readVote vote.Voto
         when true
           if response is 'relative' then @printVote(vote, 'pos')
           gauge.pos = gauge.pos + 1
@@ -82,12 +82,11 @@ class @Impeachmap
       </div>"
 
     unless document.querySelectorAll(".js-impeachmap-votes-#{container}")[0]
-      container = "<div class='js-impeachmap-votes-#{container}'></div>"
-      @votesContainer.innerHTML = @votesContainer.innerHTML + container
-    else
-      container = document.querySelectorAll(".js-impeachmap-votes-#{container}")[0]
+      current = "<div class='js-impeachmap-votes-#{container}'></div>"
+      @votesContainer.innerHTML = @votesContainer.innerHTML + current
 
-    container.innerHTML = container.innerHTML + template
+    current = document.querySelectorAll(".js-impeachmap-votes-#{container}")[0]
+    current.innerHTML = current.innerHTML + template
 
   findVotesByState: (state) ->
     result = []
