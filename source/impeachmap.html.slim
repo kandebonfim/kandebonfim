@@ -17,6 +17,11 @@ title: Impeachmap
         = image_tag 'impeachmap/map.svg', class: 'js-svg'
         .btn onclick='tmp = new Impeachmap; tmp.printAllData()' ver votação geral
 
+        .impeachmap__share
+          .fb-share-button data-href="http://www.kandebonfim.com/impeachmap" data-layout="button_count" data-mobile-iframe="true"
+          a.btn.btn--twitter href="http://www.kandebonfim.com/impeachmap" target="_blank" data-via="kandebonfim" Tweet
+          a.btn.btn--twitter href="https://twitter.com/intent/tweet?screen_name=kandebonfim" target="_blank" data-related="kandebonfim" Tweet to @kandebonfim
+
       .impeachmap__info
         .impeachmap__state-name.js-impeachmap-state-name -
         .impeachmap__region.js-impeachmap-region -
