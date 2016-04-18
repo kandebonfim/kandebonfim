@@ -1,4 +1,4 @@
-class Impeachmap
+class @Impeachmap
   constructor: ->
     @votes = impeachmapData
     @votesContainer = document.querySelectorAll(".js-impeachmap-votes")[0]
@@ -6,11 +6,13 @@ class Impeachmap
     waitForIt 300, => @bindClickEvents()
 
   addActiveStateClass: (state) ->
+    @removeActiveStateClass()
+    document.querySelectorAll(".impeachmap__state[state='#{state}']")[0].setAttribute('is-active', true)
+
+  removeActiveStateClass: ->
     active = document.querySelectorAll(".impeachmap__state[is-active]")[0]
     if active
       active.removeAttribute('is-active')
-
-    document.querySelectorAll(".impeachmap__state[state='#{state}']")[0].setAttribute('is-active', true)
 
   printStateData: (state) ->
     @printStateInfo state.getAttribute('state-full'), state.getAttribute('region')
@@ -20,6 +22,7 @@ class Impeachmap
     @addActiveStateClass state.getAttribute('state')
 
   printAllData: ->
+    @removeActiveStateClass()
     @printStateInfo 'Votação Geral', 'Todos os estados'
     @printRelativeVotes @findVoteMetrics @votes, 'relative'
     @printAbsoluteVotes @findVoteMetrics @votes
@@ -48,13 +51,13 @@ class Impeachmap
     for vote in data
       switch @readVote vote.Posicao
         when true
-          @printVote(vote, 'pos')
+          if response is 'relative' then @printVote(vote, 'pos')
           gauge.pos = gauge.pos + 1
         when false
-          @printVote(vote, 'neg')
+          if response is 'relative' then @printVote(vote, 'neg')
           gauge.neg = gauge.neg + 1
         when null
-          @printVote(vote, 'ind')
+          if response is 'relative' then @printVote(vote, 'ind')
           gauge.ind = gauge.ind + 1
 
     if response == 'relative'
