@@ -35,7 +35,7 @@ title: Hello, Folks!
               .article__title = article.title
               .article__excerpt = article.excerpt
             .article__link
-              = link_to 'read more', article.link, class: 'btn'
+              = link_to 'read more', article.link, target: '_blank', class: 'btn'
 
     .tab
       .tab__header
@@ -47,4 +47,4 @@ title: Hello, Folks!
               .article__title = project.title
               .article__excerpt = project.excerpt
             .article__link
-              = link_to 'view project', project.link, class: 'btn'
+              = link_to 'view project', project.link, target: '_blank', class: 'btn'
