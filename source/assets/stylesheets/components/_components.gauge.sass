@@ -1,0 +1,49 @@
+// ========================================
+//   #components.gauge
+// ========================================
+
+.gauge
+  position: relative
+  margin: 20px 0 40px
+
+.gauge__indicator
+  height: 12px
+  border-radius: 20px
+  position: absolute
+  width: 0%
+  right: 0
+  background-color: $color-gauge-red
+  transition: .6s
+
+  &--yellow
+    background-color: $color-gauge-yellow
+
+  &--green
+    background-color: $color-gauge-green
+
+.gauge__labels
+  padding-top: 20px
+
+.gauge__label
+  padding: 6px
+  border-radius: 4px
+  display: inline-block
+  position: absolute
+  font-size: 14px
+  font-weight: bolder
+  color: white
+  min-width: 26px
+  text-align: center
+
+  &--red
+    left: 0
+    background-color: $color-gauge-red
+
+  &--yellow
+    left: 50%
+    transform: translateX(-50%)
+    background-color: $color-gauge-yellow
+
+  &--green
+    right: 0
+    background-color: $color-gauge-green
