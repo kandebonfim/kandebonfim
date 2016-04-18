@@ -1,0 +1,39 @@
+---
+title: Impeachmap
+---
+
+.section.section--impeachmap
+  = link_to data.links.repository
+    img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+  .container
+    .hero.hero--small.hero--left
+      .hero__title Impeachmap
+      .hero__subtitle Veja como a Câmara dos Deputados votou pela admissibilidade do processo de impeachment da Presidente Dilma.
+
+.section
+  .container
+    .impeachmap.js-impeachmap
+      .impeachmap__map
+        = image_tag 'impeachmap/map.svg', class: 'js-svg'
+
+      .impeachmap__info
+        .impeachmap__state-name.js-impeachmap-state-name -
+        .impeachmap__region.js-impeachmap-region -
+
+        .gauge
+          .gauge__indicator.js-impeachmap-bars
+          .gauge__indicator.gauge__indicator--yellow.js-impeachmap-bars
+          .gauge__indicator.gauge__indicator--green.js-impeachmap-bars
+          .gauge__labels
+            .gauge__label.gauge__label--red.js-impeachmap-labels -
+            .gauge__label.gauge__label--yellow.js-impeachmap-labels -
+            .gauge__label.gauge__label--green.js-impeachmap-labels -
+
+        .js-impeachmap-votes
+
+.section
+  .container
+    .hero.hero--inline.text-align-center
+      .hero__paragraph Essa página consome dados do repositório <a href=https://github.com/schweller/mapa-impeachment/ target=_blank>mapa-impeachment</a> de <a href=https://github.com/schweller target=_blank>schweller</a>.
+      = link_to 'go back to homepage', '/', class: 'btn'
+
