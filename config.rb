@@ -5,6 +5,9 @@
 # Site Settings
 # ----------------------------------------------
 @google_analytics = "UA-72298904-2"
+@site_url = "http:/www.kandebonfim.com"
+@site_name = "Kande Bonfim - Developer"
+@site_twitter = "kandebonfim"
 
 
 # Slim HTML
