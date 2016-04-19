@@ -71,7 +71,7 @@ class @Impeachmap
         true
       when 'Contra'
         false
-      when 'Não opinou'
+      when 'Não opinou', 'Abstenção'
         null
 
   printVote: (vote, container) ->
