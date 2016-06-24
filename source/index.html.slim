@@ -6,24 +6,25 @@ url: /
 ---
 
 .section.section--green
-  = link_to data.links.repository
-    img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
   .container
     .profile-photo
     .hero
       .hero__title Hello, Folks!
       .hero__subtitle My name is Kande Bonfim.
+  .gth-buttons
+    iframe src="https://ghbtns.com/github-btn.html?user=kandebonfim&repo=kandebonfim.com&type=star&count=true" frameborder="0" scrolling="0" width="83px" height="20px"
+    iframe src="https://ghbtns.com/github-btn.html?user=kandebonfim&type=follow&count=true" frameborder="0" scrolling="0" width="176px" height="20px"
 
 .section
   .container
     .hero.hero--inline.text-align-center
-      .hero__paragraph I'm a web developer that cares a lot for the open source community and<br>currently working for <a href="#{data.links.startae}" target="_new">Startaê</a>, a UX design team on demand.
+      .hero__paragraph I'm a web developer that cares a lot for the open source community and currently working for <a href="#{data.links.startae}" target="_new">Startaê</a>, a UX design team on demand.
       .hero__paragraph
-        | I code a lot in Ruby, Rails, Ember.js, CoffeeScript/ECMAScript6, D3.js and I'm very<br>curious about OculusRift, RaspberryPI, and all that random tech stuff.
+        | I code a lot in Ruby, Rails, Ember.js, CoffeeScript/ECMAScript6, D3.js and I'm very curious about OculusRift, RaspberryPI, and all that random tech stuff.
         .hero__tip
           span ok, I had a past affair with PHP and WordPress too.
           |  😐
-      .hero__paragraph That is not everything, I became involved with many other things until<br>they fit as fit today. But that is a story for another URL.
+      .hero__paragraph That is not everything, I became involved with many other things until they fit as fit today. But that is a story for another URL.
       = link_to 'read my story', 'my-story', class: 'btn'
 
 .section
@@ -49,7 +50,7 @@ url: /
             .article__info
               .article__title
                 = project.title
-                iframe.article__gh src="https://ghbtns.com/github-btn.html?user=kandebonfim&repo=#{project.repo}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"
+                iframe.article__gh src="https://ghbtns.com/github-btn.html?user=kandebonfim&repo=#{project.repo}&type=star&count=true" frameborder="0" scrolling="0" width="90px" height="20px"
               .article__excerpt = project.excerpt
             .article__link
               = link_to 'view project', project.link, target: '_blank', class: 'btn'
