@@ -1,8 +1,12 @@
 - title: itcsscli
   excerpt: Create ITCSS modules, install inuitcss files independently and import it all on your sass base file automatically without breaking your workflow abruptly.
-  link: http://www.startae.com/blog/improving-your-workflow-with-a-templating-engine
+  link: http://www.itcsscli.com/
   repo: itcsscli
 - title: Show your terms!
   excerpt: Simple demos of your applications' terminal commands.
-  link: http://www.startae.com/blog/improving-your-workflow-with-a-templating-engine
+  link: https://kandebonfim.github.io/show-your-terms/
   repo: show-your-terms
+- title: kandebonfim.com
+  excerpt: This website is open source too!
+  link: /
+  repo: kandebonfim
