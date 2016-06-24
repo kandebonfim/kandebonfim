@@ -5,6 +5,7 @@
 .hero
   padding: 130px 0
   text-align: right
+  position: relative
 
 .hero__title,
 .hero__subtitle
@@ -21,10 +22,12 @@
 
 .hero__paragraph
   color: rgba(white, .5)
-  font-size: 20px
-  text-align: center
-  line-height: 1.2
+  font-size: 14px
+  line-height: 1.4
   margin-bottom: 20px
+
+  +respond-to(medium)
+    font-size: 20px
 
   a
     position: relative
@@ -50,6 +53,7 @@
 .hero--inline
   padding: 40px 0
   text-align: center
+  line-height: 1.4
 
 .hero--left
   text-align: left

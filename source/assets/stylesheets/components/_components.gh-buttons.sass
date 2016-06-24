@@ -1,0 +1,20 @@
+// @group components
+// @name gth-buttons
+
+.gth-buttons
+  position: absolute
+  left: 20px
+  bottom: 20px
+
+  +respond-to(large)
+    position: fixed
+    right: 20px
+    top: 20px
+    left: initial
+    bottom: initial
+
+  iframe
+    +respond-to(small)
+      float: left
+      clear: both
+      margin-bottom: 4px
