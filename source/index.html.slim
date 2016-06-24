@@ -47,7 +47,9 @@ url: /
         - data.open_source_projects.each do |project|
           .article
             .article__info
-              .article__title = project.title
+              .article__title
+                = project.title
+                iframe.article__gh src="https://ghbtns.com/github-btn.html?user=kandebonfim&repo=#{project.repo}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"
               .article__excerpt = project.excerpt
             .article__link
               = link_to 'view project', project.link, target: '_blank', class: 'btn'

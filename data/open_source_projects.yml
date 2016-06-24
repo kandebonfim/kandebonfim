@@ -1,9 +1,11 @@
-- title: "ITCSSCLI"
+- title: "itcsscli"
   excerpt: "Create ITCSS modules, install inuitcss files independently and import it all on your sass base file automatically without breaking your workflow abruptly."
   link: "http://www.startae.com/blog/improving-your-workflow-with-a-templating-engine"
+  repo: itcsscli
 - title: "Impeachmap"
   excerpt: "See how the House of Representatives voted for the admissibility of the impeachment of President Dilma."
   link: "impeachmap"
 - title: "Show your terms!"
   excerpt: "Simple demos of your applications' terminal commands."
   link: "http://www.startae.com/blog/improving-your-workflow-with-a-templating-engine"
+  repo: show-your-terms
