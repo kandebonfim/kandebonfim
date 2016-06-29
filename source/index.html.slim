@@ -40,7 +40,7 @@ url: /
               .article__excerpt = project.excerpt
             .article__link
               - if project.unavailable
-                .btn.btn--disable unavailable [ yet ]
+                .btn.btn--disable unavailable yet
               - else
                 = link_to 'details / tickets', project.link, target: '_blank', class: 'btn'
 
