@@ -87,4 +87,7 @@ configure :build do
 
   # Activate autoprefixer
   activate :autoprefixer
+
+  activate :relative_assets
+  set :relative_links, true
 end
