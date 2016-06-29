@@ -1,8 +1,0 @@
-# ========================================
-#   #itcss.yml
-# ========================================
----
-stylesheets_directory: source/assets/stylesheets
-stylesheets_import_file: application.css
-package_manager: bower
-
