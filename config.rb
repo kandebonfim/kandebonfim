@@ -69,6 +69,7 @@ end
 configure :build do
   # Use relative URLs
   activate :directory_indexes
+  page "/google9a7d64fb4870170f.html", :directory_index => false
 
   # Activate gzip
   activate :gzip
