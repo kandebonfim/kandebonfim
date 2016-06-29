@@ -22,6 +22,9 @@ gem 'wdm', '0.1.1', :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
+# Middleman Github Pages! (Finally working!)
+gem 'middleman-gh-pages'
+
 # Precompilers
 gem 'slim', '3.0.6'
 gem 'sass', '3.4.20'
