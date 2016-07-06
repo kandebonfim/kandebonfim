@@ -36,11 +36,11 @@ url: /
         - data.events.each do |project|
           .article.article--event.bg-center-cover style="background-image: url(#{image_path(project.image)})"
             .article__info
-              .article__title data-label=project.label = project.title
+              .article__title data-label=project.label class=(project.passed ? 'passed' : '') = project.title
               .article__excerpt = project.excerpt
             .article__link
               - if project.unavailable
-                .btn.btn--disable unavailable yet
+                .btn.btn--disable unavailable
               - else
                 = link_to 'details / tickets', project.link, target: '_blank', class: 'btn'
 
