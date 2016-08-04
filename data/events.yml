@@ -1,11 +1,10 @@
+- title: "SketchApp Meetup Brasília"
+  label: July 27th
+  passed: true
+  excerpt: "Let's talk about an App every designer loves: Sketch! Some tips, plugins, and integrations to help you to take the best of it."
+  image: events/sketch.jpg
 - title: "IXDA Meeting #03"
   label: July 5th
-  excerpt: I will be at IXDA Meeting - Brasília talking about my perspective in the interface development with focus on realistic data prototyping.
-  link: https://www.facebook.com/events/1559794140988858/
+  passed: true
+  excerpt: I was at IXDA Meeting - Brasília talking about my perspective in the interface development with focus on realistic data prototyping.
   image: events/ixda.jpg
-- title: "SketchApp Meetup Brasília"
-  label: soon
-  excerpt: "Let's talk about an App every designer loves: Sketch! Some tips, plugins, and integrations to help you to take the best of it."
-  link: events/sketch.jpg
-  image: events/sketch.jpg
-  unavailable: true
