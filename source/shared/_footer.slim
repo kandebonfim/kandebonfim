@@ -2,18 +2,18 @@
   .container
     .social-links.text-align-center
       .social-links__title
-        | I’m
-        = link_to ' '+data.links.twitter.username, data.links.twitter.link, target: '_new'
+        | I’m #{}
+        = link_to data.links.twitter.username, data.links.twitter.link, target: '_new'
         |  everywhere.
       .social-links__list
         - data.links.social.each do |link|
-          = link_to '', link.link, target: '_new', class: "fa fa-lg fa-#{link.icon} social-links__link", title: link.title
+          = link_to '', link.link, target: '_new', class: "fa fa-lg fa-#{link.title.parameterize} social-links__link", title: link.title
 
 .section
   .container
     .hero.hero--inline.copyright
       | running in
       = link_to ' middleman', data.links.middleman, target: '_new', class: 'copyright__link'
-      | . designed and coded by
-      = link_to ' '+data.links.twitter.username, data.links.twitter.link, target: '_new', class: 'copyright__link'
+      | . designed and coded by #{}
+      = link_to data.links.twitter.username, data.links.twitter.link, target: '_new', class: 'copyright__link'
       | .
