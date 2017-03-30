@@ -72,3 +72,15 @@ url: /
               .article__excerpt = project.excerpt
             .article__link
               = link_to 'view project', project.link, target: '_blank', class: 'btn'
+
+    .tab
+      .tab__header
+        .tab__handler Datasets
+      .tab__content
+        - data.datasets.each do |dataset|
+          .article
+            .article__info
+              .article__title = dataset.title
+              .article__excerpt = dataset.excerpt
+            .article__link
+              = link_to 'view on kaggle', dataset.link, target: '_blank', class: 'btn'
