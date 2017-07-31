@@ -3,17 +3,23 @@
 // ========================================
 
 .hero
-  padding: 130px 0
-  text-align: right
+  padding: 12em 0
   position: relative
+  display: inline-flex
+  flex-direction: column
+  justify-content: center
 
-.hero__title,
-.hero__subtitle
-  color: white
+  > *
+    align-self: center
 
 .hero__title
-  font-size: 60px
+  font-family: $font-heading
+  font-size: 1em
   font-weight: 800
+  letter-spacing: 1.1em
+  padding-left: 1.1em
+  text-transform: uppercase
+  color: $color-pink
 
 .hero__subtitle
   font-size: 18px
@@ -21,7 +27,6 @@
   line-height: 1.2
 
 .hero__paragraph
-  color: rgba(white, .7)
   font-size: 14px
   line-height: 1.4
   margin-bottom: 20px
@@ -30,11 +35,12 @@
     font-size: 18px
 
   a
-    border-bottom: 1px dotted rgba($color-green, .7)
+    border-bottom: 1px dotted rgba($color-pink, .7)
     transition: .2s
 
     &:hover
-      color: $color-green
+      color: $color-pink
+      border-bottom-style: solid
 
 .hero__tip
   font-size: 13px

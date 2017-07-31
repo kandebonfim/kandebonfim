@@ -5,82 +5,23 @@ image: og-images/hello_folks.jpg
 url: /
 ---
 
-.section.section--green
+.section.section--white.no-padding-bottom
   .container
     .profile-photo
     .hero
-      .hero__title Hello, Folks!
-      .hero__subtitle My name is Kande Bonfim.
-  .gth-buttons
-    iframe src="https://ghbtns.com/github-btn.html?user=kandebonfim&repo=kandebonfim&type=star&count=true" frameborder="0" scrolling="0" width="83px" height="20px"
-    iframe src="https://ghbtns.com/github-btn.html?user=kandebonfim&type=follow&count=true" frameborder="0" scrolling="0" width="176px" height="20px"
+      .hero__title Kande Bonfim
+      .hero__subtitle Front-end Developer and Open Data enthusiast
 
 .section
   .container.container--small
     .hero.hero--inline.text-align-center
-      .hero__paragraph I'm a developer & designer that cares a lot for the open source community and currently working for <a href="#{data.links.startae}" target="_new">Startaê</a>, a UX design team on demand.
-      .hero__paragraph
-        | I code a lot in Ruby, Rails, Ember.js, CoffeeScript/ECMAScript6, D3.js and I'm very curious about OculusRift, RaspberryPI, and all that random tech stuff.
-        .hero__tip
-          span ok, I had a past affair with PHP and WordPress too.
-          |  😐
-      .hero__paragraph That is not everything, I became involved with many other things until they fit as fit today. But that is a story for another URL.
+      .hero__paragraph I'm a full-time developer at <a href="#{data.links.startae}" target="_new">Startaê</a> where I have the pleasure of working with some great people building complex digital products, consulting on client-side architecture and exploring the applications of Business Analytics in our products.
+      .hero__paragraph I’m passionate about Machine Learning and have dedicated myself to deepen my knowledge on neural networks joining the Deep Learning Nanodegree Program on Udacity in addition to other courses in the Data Science field.
+      .hero__paragraph Here you’ll find the tip of the iceberg of what I do and some links you may find uselful.
       / = link_to 'read my story', 'my-story', class: 'btn'
 
 .section
   .container
-    .tab
-      .tab__header
-        .tab__handler Events
-      .tab__content
-        - data.events.each do |project|
-          .article.article--event.bg-center-cover style="background-image: url(#{image_path(project.image)})"
-            .article__info
-              .article__title data-label=project.label class=('passed' if project.passed) = project.title
-              .article__excerpt = project.excerpt
-            - if project.link
-              .article__link
-                = link_to 'details / tickets', project.link, target: '_blank', class: 'btn'
+    .card
+      .card__content
 
-        .hero__paragraph.text-align-center
-          | And I'm also available for #{}
-          = mail_to 'kandebonfim@gmail.com', ' attending to your event as speaker'
-          | .
-
-    .tab
-      .tab__header
-        .tab__handler Latest Articles
-      .tab__content
-        - data.articles.each do |article|
-          .article
-            .article__info
-              .article__title = article.title
-              .article__excerpt = article.excerpt
-            .article__link
-              = link_to 'read more', article.link, target: '_blank', class: 'btn'
-
-    .tab
-      .tab__header
-        .tab__handler Open Source Projects
-      .tab__content
-        - data.open_source_projects.each do |project|
-          .article
-            .article__info
-              .article__title
-                = project.title
-                iframe.article__gh src="https://ghbtns.com/github-btn.html?user=kandebonfim&repo=#{project.repo}&type=star&count=true" frameborder="0" scrolling="0" width="90px" height="20px"
-              .article__excerpt = project.excerpt
-            .article__link
-              = link_to 'view project', project.link, target: '_blank', class: 'btn'
-
-    .tab
-      .tab__header
-        .tab__handler Datasets
-      .tab__content
-        - data.datasets.each do |dataset|
-          .article
-            .article__info
-              .article__title = dataset.title
-              .article__excerpt = dataset.excerpt
-            .article__link
-              = link_to 'view on kaggle', dataset.link, target: '_blank', class: 'btn'
