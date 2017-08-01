@@ -9,22 +9,33 @@
 .card__content
   background-color: white
   display: flex
-  transform: translate(-.6em, -.6em)
-  box-shadow: 0 10px 20px rgba(black, .19)
-  transition: .2s
 
-  .card:hover &, .card:focus &,
-    transform: translate(0em, 0em)
-    box-shadow: 0 0 0 rgba(black, 0)
+  +bp(md)
+    box-shadow: 0 10px 20px rgba(black, .19)
+    transform: translate(-.6em, -.6em)
+    transition: .2s
+
+    .card:hover &, .card:focus &,
+      transform: translate(0em, 0em)
+      box-shadow: 0 0 0 rgba(black, 0)
+
+  +bp(md-only)
+    flex-direction: column
 
   canvas
     position: absolute
 
+    +bp(md-only)
+      display: none
+
 .card__cover
-  width: 30%
   flex-shrink: 0
   display: flex
   justify-content: center
+  min-height: 12em
+
+  +bp(md)
+    width: 30%
 
 .card__info
   padding: 2em
@@ -41,6 +52,7 @@
 
 .card__subtitle
   font-size: 1.2em
+  line-height: 1.2
   font-weight: bold
 
 .card__paragraph
@@ -66,17 +78,27 @@
     margin-top: 2em
 
 .card--website
-  width: calc(50% - 1em - 2px)
+  width: 100%
 
-  &:nth-child(even)
-    margin-left: 2em
+  +bp(md)
+    width: calc(50% - 1em - 2px)
 
-  &:nth-child(n+3)
-    margin-top: 2em
+    &:nth-child(even)
+      margin-left: 2em
+
+    &:nth-child(n+3)
+      margin-top: 2em
+
+  +bp(md-only)
+    & + &
+      margin-top: 1em
 
   .card__content
-    height: 300px
     justify-content: center
+    height: 12em
+
+    +bp(md)
+      height: 20em
 
 .card--small .card__info
   min-height: 6em

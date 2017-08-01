@@ -5,7 +5,15 @@
 .copyright
   font-size: 12px
   font-family: $font-heading
-  letter-spacing: .1em
+  line-height: 1.6
+
+  +bp(md)
+    letter-spacing: .1em
+
+  br
+    +bp(md)
+      display: none
+
 
 .copyright__link
   color: $color-pink

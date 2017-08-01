@@ -19,3 +19,8 @@
 # http://vincentgarreau.com/particles.js/
 # -------------------------------------
 #= require particles.js/particles
+
+# Swiper
+# github.com/nolimits4web/Swiper
+# -------------------------------------
+#= require swiper/dist/js/swiper
