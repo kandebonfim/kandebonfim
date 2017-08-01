@@ -4,3 +4,82 @@
 
 .card
   border: 1px solid $color-gray
+  display: block
+
+.card__content
+  background-color: white
+  display: flex
+  transform: translate(-.6em, -.6em)
+  box-shadow: 0 10px 20px rgba(black, .19)
+  transition: .2s
+
+  .card:hover &, .card:focus &,
+    transform: translate(0em, 0em)
+    box-shadow: 0 0 0 rgba(black, 0)
+
+  canvas
+    position: absolute
+
+.card__cover
+  width: 30%
+  flex-shrink: 0
+  display: flex
+  justify-content: center
+
+.card__info
+  padding: 2em
+  min-height: 10em
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.card__title
+  font-size: 1.8em
+  line-height: 1.2
+  font-family: $font-heading
+  font-weight: 900
+
+.card__subtitle
+  font-size: 1.2em
+  font-weight: bold
+
+.card__paragraph
+  margin-top: .6em
+  line-height: 1.6
+
+.card__logo
+  height: 1.8em
+  align-self: center
+  position: relative
+  z-index: 1
+
+  &--vert_logo
+    height: 8em
+    margin: 1em 0
+
+.card__container
+  display: flex
+  flex-wrap: wrap
+
+.card--stack
+  & + &
+    margin-top: 2em
+
+.card--website
+  width: calc(50% - 1em - 2px)
+
+  &:nth-child(even)
+    margin-left: 2em
+
+  &:nth-child(n+3)
+    margin-top: 2em
+
+  .card__content
+    height: 300px
+    justify-content: center
+
+.card--small .card__info
+  min-height: 6em
+
+.card--boomerang-commerce .card__content
+  background-image: image-url('bg-boomerang-commerce.png')

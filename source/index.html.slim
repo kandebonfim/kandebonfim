@@ -22,6 +22,43 @@ url: /
 
 .section
   .container
-    .card
-      .card__content
+    .title data-this="What I do" Websites
+    .card__container
+      - data.websites.each do |website|
+        = link_to website.link, target: '_new', class: "card card--website bg-center-cover card--#{website.title.parameterize}" do
+          .card__content style="background-color: #{website.color}" id=website.title.parameterize
+            = image_tag "logos/#{website.title.parameterize}.svg", class: 'card__logo'
 
+.section
+  .container
+    .title data-this="What I write" Articles
+    - data.articles.each do |article|
+      = link_to article.link, target: '_new', class: 'card card--stack' do
+        .card__content
+          .card__cover.bg-center-cover style="background-image: url(#{article.cover})"
+          .card__info
+            .card__title = article.title
+            .card__paragraph = article.excerpt
+
+.section.section--white.section--social
+  .container
+    .social-links.text-align-center
+      .social-links__title
+        | I’m #{}
+        = link_to data.links.twitter.username, data.links.twitter.link, target: '_new'
+        |  everywhere.
+      .social-links__list
+        - data.links.social.each do |link|
+          = link_to '', link.link, target: '_new', class: "fa fa-lg fa-#{link.title.parameterize} social-links__link", title: link.title
+
+.section
+  .container
+    .title.title--small data-this="What I do for the community" Open Source
+    - data.open_source_projects.each do |project|
+      = link_to project.link, target: '_new', class: 'card card--stack card--small' do
+        .card__content
+          .card__cover.bg-center-cover style="background-color: #{project.color}"
+            = image_tag "logos/#{project.title.parameterize}.svg", class: "card__logo #{('card__logo--vert_logo' if project.vert_logo)}"
+          .card__info
+            .card__subtitle = project.subtitle
+            .card__paragraph = project.excerpt
