@@ -16,32 +16,33 @@
 // [7] Trumps --------- Overrides and helper classes.
 
 
-// [1] Settings
-@import "settings/_settings.colors.sass"
-@import "settings/_settings.fonts.sass"
+// [0] Requirements
+@import "requirements/requirements.vendor"
 
-// [2] Tools
-@import "tools/_tools.mediaqueries.sass"
+// [1] Settings
+@import "settings/settings.colors"
+@import "settings/settings.fonts"
+@import "settings/settings.grid.scss"
 
 // [3] Generic
-@import "generic/_generic.resets.sass"
+@import "generic/generic.resets"
 
 // [4] Base
-@import "base/_base.type.sass"
+@import "base/base.type"
 
 // [5] Objects
-@import "objects/_objects.containers.sass"
+@import "objects/objects.containers"
 
 // [6] Components
-@import "components/_components.buttons.sass"
-@import "components/_components.card.sass"
-@import "components/_components.copyright.sass"
-@import "components/_components.hero.sass"
-@import "components/_components.profile-photo.sass"
-@import "components/_components.sections.sass"
-@import "components/_components.social-links.sass"
-@import "components/_components.title.sass"
+@import "components/components.buttons"
+@import "components/components.card"
+@import "components/components.copyright"
+@import "components/components.hero"
+@import "components/components.profile-photo"
+@import "components/components.sections"
+@import "components/components.social-links"
+@import "components/components.title"
 
 // [7] Trumps
-@import "trumps/_trumps.helpers.sass"
+@import "trumps/trumps.helpers"
 

@@ -29,6 +29,7 @@
     "inuit-spacing": "0.7.0",
     "inuit-flag": "0.3.2",
     "inuit-list-inline": "0.3.2",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "hagrid": "^3.1.0"
   }
 }
