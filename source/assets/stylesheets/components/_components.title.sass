@@ -11,11 +11,15 @@
   position: relative
 
   +bp(md-only)
-    // text-align: center
+    text-align: center
+    margin-bottom: 1em
+    letter-spacing: .4em
+
+  +bp(lg)
+    margin: 0 0 -.16em -.6em
 
   +bp(md)
     font-size: 8em
-    margin: 0 0 -.16em -.6em
 
     &:after
       content: "— This is "attr(data-this)

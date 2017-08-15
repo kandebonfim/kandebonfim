@@ -3,14 +3,16 @@
 // ========================================
 
 .hero
-  padding: 12em 0
   position: relative
-  display: inline-flex
+  display: flex
   flex-direction: column
   justify-content: center
+  min-height: 100vh
 
-  > *
-    align-self: center
+  +bp(lg-only)
+    > *
+      align-self: center
+      text-shadow: 0 0 8px white
 
 .hero__title
   font-family: $font-heading
