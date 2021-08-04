@@ -5,7 +5,14 @@ body
   display: flex
   justify-content: center
   height: 100vh
+  background-color: $c-black
+
+  &.blink
+    background-color: $c-yellow
 
 .logo
   height: 20vh
   align-self: center
+
+  body.blink & path
+    fill: $c-black
