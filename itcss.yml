@@ -1,0 +1,11 @@
+# ========================================
+#   #itcss.yml
+#   This file is automatically updated by itcsscli.
+# ========================================
+---
+stylesheets_directory: source/assets/stylesheets
+stylesheets_import_file: application.css
+extension: sass
+package_manager: npm
+inuit_prefix: ''
+

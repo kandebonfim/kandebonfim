@@ -1,0 +1,18 @@
+meta charset='utf-8'
+title = (current_resource.data.title.present? ? current_resource.data.title+' － geringonça.cc' : 'geringonça.cc')
+= stylesheet_link_tag 'application.css', media: 'all'
+link rel='dns-prefetch' href='//cdnjs.cloudflare.com'
+link rel='dns-prefetch' href='//www.google-analytics.com'
+link rel='shortcut icon' href="#{image_path('favicon.png?v=1')}"
+meta content='initial-scale=1, user-scalable=yes, width=device-width' name='viewport'
+meta http-equiv='X-UA-Compatible' content='IE=edge'
+meta content='on' http-equiv='cleartype'
+meta content='True' name='HandheldFriendly'
+meta content='320' name='MobileOptimized'
+/[if lt IE 9]
+  = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'
+  = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
+= javascript_include_tag 'site'
+script src="https://unpkg.com/swiper/swiper-bundle.min.js"
+link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+= yield_content :head
