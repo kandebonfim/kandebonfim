@@ -1,19 +1,6 @@
-# Activate and configure extensions
-# https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
 # Slim HTML
 # ----------------------------------------------
 ::Slim::Engine.set_options :format  => :html
-
-# Livereload
-# ----------------------------------------------
-configure :development do
-  activate :livereload, :no_swf => true
-end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -64,6 +51,7 @@ set :fonts_dir, 'assets/fonts'
 
 configure :development do
   activate :directory_indexes
+  activate :livereload, :no_swf => true
 
   set :debug_assets, true
 
