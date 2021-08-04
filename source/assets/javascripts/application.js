@@ -5,4 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.classList.toggle('blink');
     console.log('ee');
   }, false);
+
+  feather.replace()
 });
