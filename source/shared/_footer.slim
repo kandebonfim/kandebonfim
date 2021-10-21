@@ -1,3 +1,8 @@
-.footer
-  = link_to 'https://www.instagram.com/geringonca.cc/' do
-    i data-feather="instagram"
+.section.section--white
+  .container
+    .text-align-center.copyright
+      | running in
+      = link_to ' middleman', data.links.middleman, target: '_new', class: 'copyright__link'
+      | .<br> designed and coded by #{}
+      = link_to data.links.twitter.username, data.links.twitter.link, target: '_new', class: 'copyright__link'
+      | .

@@ -1,0 +1,27 @@
+repository: "https://github.com/kandebonfim/kandebonfim"
+middleman: "https://middlemanapp.com/"
+
+startae: "http://www.startae.com/"
+
+twitter:
+  username: "@kandebonfim"
+  link: &my_twitter_link "https://twitter.com/kandebonfim"
+
+social:
+  - title: "Twitter"
+    link: *my_twitter_link
+  - title: "GitHub"
+    link: "https://github.com/kandebonfim"
+  - title: "CodePen"
+    link: "http://codepen.io/kandebonfim/"
+  - title: "Medium"
+    link: "https://medium.com/@kandebonfim"
+  - title: "Dribbble"
+    link: "https://dribbble.com/kandebonfim"
+  - title: "Instagram"
+    link: "https://instagram.com/kandebonfim/"
+  - title: "Facebook"
+    link: "https://www.facebook.com/kandebonfim"
+  - title: "Linkedin"
+    link: "https://linkedin.com/in/kandebonfim"
+

@@ -1,14 +1,15 @@
-/// @group base
-/// @name type
+// ========================================
+//   #base.type
+// ========================================
 
 body
-  display: flex
-  justify-content: center
-  height: 100vh
-  background-color: $c-black
-  color: $c-yellow
-  transition: .1s
+  font-family: $font-paragraph
+  color: rgba(black, .7)
+  background-color: $color-background
+  overflow-x: hidden
 
-  &.blink
-    background-color: $c-yellow
-    color: $c-black
+  +bp(md-only)
+    font-size: .8em
+
+strong
+  border-bottom: 1px dotted $color-pink

@@ -1,0 +1,60 @@
+// ========================================
+//   #components.hero
+// ========================================
+
+.hero
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 100vh
+
+  +bp(lg-only)
+    > *
+      align-self: center
+      text-shadow: 0 0 8px white
+
+.hero__title
+  font-family: $font-heading
+  font-size: 1em
+  font-weight: 800
+  letter-spacing: 1.1em
+  padding-left: 1.1em
+  text-transform: uppercase
+  color: $color-pink
+
+.hero__subtitle
+  font-size: 18px
+  margin-top: 10px
+  line-height: 1.2
+
+.hero__paragraph
+  font-size: 1.2em
+  line-height: 1.4
+  margin-bottom: 20px
+
+  a
+    border-bottom: 1px dotted rgba($color-pink, .7)
+    transition: .2s
+
+    &:hover, &:focus
+      color: $color-pink
+      border-bottom-style: solid
+
+.hero__tip
+  font-size: 13px
+  margin-top: 8px
+
+  span
+    opacity: .5
+
+.hero--inline
+  padding: 40px 0
+  text-align: center
+  line-height: 1.4
+
+.hero--left
+  text-align: left
+
+.hero--small
+  padding: 60px 0

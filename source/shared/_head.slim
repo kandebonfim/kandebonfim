@@ -1,17 +1,24 @@
 meta charset='utf-8'
-title = (current_resource.data.title.present? ? current_resource.data.title+' － geringonça.cc' : 'geringonça.cc')
-= stylesheet_link_tag '/assets/stylesheets/application.css', media: 'all'
+title = current_page.data.title || "Middleman"
+= stylesheet_link_tag 'application.css', media: 'all'
 link rel='dns-prefetch' href='//cdnjs.cloudflare.com'
 link rel='dns-prefetch' href='//www.google-analytics.com'
-link rel='shortcut icon' href="#{image_path('favicon.png?v=2')}"
+link rel='shortcut icon' href="#{image_path('favicon.png')}"
 meta content='initial-scale=1, user-scalable=yes, width=device-width' name='viewport'
 meta http-equiv='X-UA-Compatible' content='IE=edge'
 meta content='on' http-equiv='cleartype'
 meta content='True' name='HandheldFriendly'
 meta content='320' name='MobileOptimized'
+meta http-equiv="Cache-control" content="private" max-age='600'
+= partial '/shared/metatags'
+/ -------------------------------------
+/ Modernizr - Development version
+/ This is the Development version. Remember to use
+/ the build tool below to pick only the tests you need.
+/ -------------------------------------
+= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Muli:400,700,900|Titillium+Web'
+= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
 /[if lt IE 9]
-  = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'
+  = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js'
   = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
-= javascript_include_tag 'application'
-script src="https://unpkg.com/feather-icons">
 = yield_content :head

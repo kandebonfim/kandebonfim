@@ -1,0 +1,38 @@
+// ========================================
+//   #components.social-links
+// ========================================
+
+.social-links
+
+.social-links__title
+  font-size: 1.4em
+  color: $color-pink
+  font-weight: 900
+  font-family: $font-heading
+
+  +bp(md)
+    font-size: 1.8em
+
+  a:hover, a:focus
+    opacity: .8
+
+.social-links__list
+  margin-top: 24px
+
+  +bp(md-only)
+    margin: 16px auto 0
+    width: 90%
+    line-height: 2
+
+.social-links__link
+  transition: .2s
+  margin: 0 12px
+
+  &:hover, &:focus
+    color: $color-pink
+
+  +bp(md-only)
+    font-size: 18px !important
+    margin: 0 4px
+    padding: 12px
+    width: 20px

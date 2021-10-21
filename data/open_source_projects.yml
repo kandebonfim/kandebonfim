@@ -1,0 +1,25 @@
+- title: Show your terms!
+  subtitle: Simple demos of your applications' terminal commands
+  excerpt: CLI interactions are confusing to understand at first sight because the commands are mixed with the application response. It's very important to be didactic to your users and Show your terms! can help you with that!
+  color: '#3B2734'
+  link: https://kandebonfim.github.io/show-your-terms/
+  repo: show-your-terms
+- title: itcsscli
+  subtitle: Manage your ITCSS structure from command line
+  excerpt: Create ITCSS modules, install inuitcss files independently and import it all into your sass base file automatically without breaking your workflow abruptly.
+  color: '#567FA8'
+  link: http://www.itcsscli.com/
+  repo: itcsscli
+- title: itcssdoc
+  subtitle: A quick overview into your ITCSS structure
+  excerpt: A great problem of ITCSS structures it is the big pile of files it becomes over time. itcsscli's documentation makes much more easy showing your project's big picture to a new frontend developer or even refactoring your CSS architecture.
+  color: '#232F42'
+  link: http://www.itcsscli.com/
+  repo: itcsscli
+- title: kandebonfim.com
+  subtitle: This website is open source too!
+  excerpt: Feel free to fork it on github and use it as your personal website. No hard feelings!
+  color: '#F75455'
+  link: /
+  vert_logo: true
+  repo: kandebonfim
