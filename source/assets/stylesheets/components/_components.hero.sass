@@ -8,31 +8,41 @@
   flex-direction: column
   justify-content: center
   min-height: 100vh
-  align-self: start
+  text-align: center
 
   +bp(lg-only)
     > *
       align-self: center
       text-shadow: 0 0 8px white
 
+.hero__content
+  align-self: start
+
+  +bp(md-only)
+    align-self: center
+
 .hero__title
   font-family: $font-heading
-  font-size: 1em
+  font-size: 1.4em
+  letter-spacing: .5em
   font-weight: 800
-  letter-spacing: 1.1em
   padding-left: 1.1em
   text-transform: uppercase
   color: $color-pink
 
+  +bp(md)
+    font-size: 1em
+    letter-spacing: 1.1em
+
 .hero__subtitle
-  font-size: 18px
+  font-size: 16px
   margin-top: 10px
   line-height: 1.2
   align-self: center
   opacity: .8
 
-  +bp(md-only)
-    text-align: center
+  +bp(md)
+    font-size: 18px
 
 .hero__paragraph
   font-size: 1.2em
