@@ -1,13 +1,14 @@
-/ meta name='description' content="#{current_page.description}"
-/ meta property='og:url' content="#{@site_url}#{current_page.url}"
-/ meta property='og:title' content="#{current_page.title}"
-/ meta name='twitter:title' content="#{current_page.title}"
-/ - if current_page.image
-/   meta property='og:image' content="#{@site_url}#{image_path(current_page.image)}"
-/   meta name='twitter:image:src' content="#{@site_url}#{image_path(current_page.image)}"
-/ meta property='og:description' content="#{current_page.description}"
-/ meta name='twitter:site' content="#{@site_twitter}"
-/ meta name='twitter:creator' content="#{@site_name}"
-/ meta property='article:author ' content="#{@site_name}"
-/ meta property='og:site_name' content="#{@site_name}"
-/ meta name='twitter:card' content='summary_large_image'
+
+meta name='description' content="#{current_page.data.description}"
+meta property='og:url' content="#{@site_url}#{current_page.data.url}"
+meta property='og:title' content="#{current_page.data.title}"
+meta name='twitter:title' content="#{current_page.data.title}"
+- if current_page.data.image
+  meta property='og:image' content="#{@site_url}#{image_path(current_page.data.image)}"
+  meta name='twitter:image:src' content="#{@site_url}#{image_path(current_page.data.image)}"
+meta property='og:description' content="#{current_page.data.description}"
+meta name='twitter:site' content="#{@site_twitter}"
+meta name='twitter:creator' content="#{@site_name}"
+meta property='article:author ' content="#{@site_name}"
+meta property='og:site_name' content="#{@site_name}"
+meta name='twitter:card' content='summary_large_image'
