@@ -10,16 +10,8 @@
   min-height: 100vh
   text-align: center
 
-  +bp(lg-only)
-    > *
-      align-self: center
-      text-shadow: 0 0 8px white
-
 .hero__content
-  align-self: start
-
-  +bp(md-only)
-    align-self: center
+  align-self: center
 
 .hero__title
   font-family: $font-heading
@@ -56,6 +48,36 @@
     &:hover, &:focus
       color: $color-pink
       border-bottom-style: solid
+
+.hero__picture
+  background-image: image-url('kande_profile.jpg?v=2')
+  background-blend-mode: multiply
+  background-size: cover
+  position: absolute
+  bottom: 0
+  left: 50%
+  width: 32vw
+  height: 32vw
+  transform: translateX(-50%)
+
+  +bp(lg-only)
+    width: 56vw
+    height: 56vw
+
+  +bp(md-only)
+    width: 76vw
+    height: 76vw
+
+.hero__upsidedown
+  margin: 1em auto 0
+  width: 60vw
+  display: block
+
+  +bp(md)
+    width: 30vw
+
+  +bp(lg)
+    width: 16vw
 
 .hero__tip
   font-size: 13px

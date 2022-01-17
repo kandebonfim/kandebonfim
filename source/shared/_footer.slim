@@ -1,8 +1,9 @@
-.section.section--white
+.section.section--white.no-padding-bottom
   .container
     .text-align-center.copyright
-      | running in
+      | running on
       = link_to ' middleman', data.links.middleman, target: '_new', class: 'copyright__link'
       | .<br> designed and coded by #{}
       = link_to data.links.twitter.username, data.links.twitter.link, target: '_new', class: 'copyright__link'
       | .
+    = image_tag 'kande-upside-down.jpg', class: 'hero__upsidedown'
